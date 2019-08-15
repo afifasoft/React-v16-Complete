@@ -12,7 +12,7 @@ class App extends React.Component {
   //     errorMessage: ''
   //   };
   //
-  // }
+  // } 
 
   state = {lat: null, errorMessage: ''};
   // Only one time this life cycle method is called
