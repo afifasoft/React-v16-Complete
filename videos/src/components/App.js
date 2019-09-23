@@ -3,6 +3,7 @@ import SearchBar from './SearchBar';
 import youtube from '../api/youtube';
 import VideoList from './VideoList';
 
+
 class App extends Component {
   state = {
     videos: []
@@ -29,7 +30,8 @@ class App extends Component {
       <div className="ui container">
         <SearchBar onFormSubmit={this.onTermSubmit}/>
         <VideoList videos={this.state.videos}/>
-      </div>
+    
+    </div>
     );
   }
 }
