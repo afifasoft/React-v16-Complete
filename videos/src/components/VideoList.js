@@ -10,7 +10,7 @@ const VideoList = ({ videos }) => {
     console.log(videos);
       //    {props.videos.length}
     return (
-      <div>
+      <div className="ui relaxed divided list">
 
       { renderedList }
       </div>
