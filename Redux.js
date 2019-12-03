@@ -33,3 +33,13 @@ const createClaim = (name, amountOfMoneyToCollect) => {
     }
   };
 };
+
+
+
+function connect() {
+	return function() {
+  	return 'Hi, there'
+  }
+}
+
+connect()()
