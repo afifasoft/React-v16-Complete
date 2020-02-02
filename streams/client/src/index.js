@@ -12,7 +12,7 @@ const store = createStore(
   composeEnhancers(applyMiddleware())
 );
 
-// 224
+
 ReactDOM.render(
   <Provider store={store}>
     <App/>
