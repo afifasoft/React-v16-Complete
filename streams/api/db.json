@@ -32,39 +32,9 @@
       "id": 6
     },
     {
-      "title": "Perfios",
-      "description": "Software Company",
-      "userId": "109519814062419804859",
-      "id": 7
-    },
-    {
-      "title": "Unexpected behaviour",
-      "description": "Didn't expect that",
-      "userId": "109519814062419804859",
-      "id": 8
-    },
-    {
-      "title": "Programatic Navigation",
-      "description": "You should not see this page UPDATED SOME RECORDS",
-      "userId": "109519814062419804859",
-      "id": 9
-    },
-    {
       "title": "FaceBook",
       "description": "Software Company this company about refactoring",
       "id": 10
-    },
-    {
-      "title": "Kandoora Malkalmalbas",
-      "description": "245",
-      "userId": "109519814062419804859",
-      "id": 11
-    },
-    {
-      "title": "Dry Clean",
-      "description": "45",
-      "userId": "109519814062419804859",
-      "id": 12
     }
   ]
 }
