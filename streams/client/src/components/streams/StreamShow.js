@@ -13,13 +13,29 @@ class StreamShow extends Component {
   componentDidMount() {
     const { id } = this.props.match.params;  // destructure
     this.props.fetchStream(id);
+    this.buildPlayer();
+  }
+
+  componentDidUpdate() {
+    this.buildPlayer();
+  }
+
+  // used for cleanup some resoureces
+  componentWillUnmount() {
+    this.player.destroy();
+  }
+
+  buildPlayer() {
+    if (this.player || !this.props.stream) {
+      return;
+    }
+    const { id } = this.props.match.params;  // destructure
     this.player = flv.createPlayer({
       type: 'flv',
       url: `http://localhost:8000/live/${id}.flv`
     });
     this.player.attachMediaElement(this.videoRef.current);
     this.player.load();
-  
   }
 
   render() {
