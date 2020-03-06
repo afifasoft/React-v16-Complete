@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import 'semantic-ui-css/semantic.min.css';
-
-
+import UserCreate from './UserCreate';
 
 class App extends Component {
 
@@ -17,9 +16,10 @@ class App extends Component {
         <div>
           Select a language
           <i className="flag us" onClick={() => this.onLanguageChange('english')}/>
-          <i className="flag ae" onClick={() => this.onLanguageChange('arabic')}/>
+          <i className="flag ae" onClick={() => this.onLanguageChange('dutch')}/>
         </div>
-        {this.state.language}
+
+        <UserCreate />
       </div>
     );
   }
