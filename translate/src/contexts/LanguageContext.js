@@ -12,7 +12,7 @@ export class LanguageStore extends Component {
 
   render() {
     return (
-      <Context.Provider value={{ ...this.state, onLanguageChange }}>
+      <Context.Provider value={{ ...this.state, onLanguageChange: this.onLanguageChange }}>
         {this.props.children}
       </Context.Provider>
     )
